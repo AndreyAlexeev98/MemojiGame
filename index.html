@@ -3,88 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memoji Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MEMOJI</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <div class="wrapper">
         <h1 class="title">Memoji</h1>
-        <ul class="cards">
-            <li class="card" id="btn">
+        <ul class="cards" id="cardsList">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/happy.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/in-love.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/laughing.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/shocked.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/smile.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/smiling.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/happy.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/in-love.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/laughing.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/shocked.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/smile.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
-            <li class="card" id="btn">
+            <li class="card">
                 <div class="card__front"></div>
-                <div class="card__back">
-                    <img src="./icons/smiling.png" alt="happy smile" class="card__img">
-                </div>
+                <div class="card__back"></div>
             </li>
         </ul>
+        <div class="countdown" id="timer">01:00</div>
+    </div>
+    <div class="overlay">
+        <div class="win">
+            <div class="text"><i>W</i><i>I</i><i>N</i></div>
+            <div class="button" id="play_again">Play again</div>
+        </div>
+        <div class="lose">
+            <div class="text"><i>L</i><i>O</i><i>S</i><i>E</i></div>
+            <div class="button" id="try_again">Try again</div>
+        </div>
     </div>
     <script src="./script.js"></script>
+    <script>memoji();</script>
 </body>
 </html>
